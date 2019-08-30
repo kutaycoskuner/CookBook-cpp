@@ -1,10 +1,10 @@
 #ifndef BASIC_FUNCTIONS
 #define BASIC_FUNCTIONS
 //
-void helloWorld();
-int inputOutput();
-int getValueFromUser();
-int readNumber();
-void writeNumber(int i);
+void helloWorld();				// helloWorld
+int inputOutput();				// inputOutput
+int getValueFromUser();			// getValueFromUser
+int readNumber();				// io
+void writeNumber(int i);		// io 
 //
 #endif
