@@ -1,16 +1,28 @@
 #include <iostream>
+#include "basic_Functions.h"
 
 // # ==== Forward Declarations ====
-void helloWorld();
-int inputOutput();
-int getValueFromUser();
+//
+//void helloWorld();
+//int inputOutput();
+//int getValueFromUser();
 
 // # ==== Main ====
 int main()
 {
-	helloWorld();
+	// # ==== Basic Functions Usage ====
+	//
+	/*helloWorld();
 	inputOutput();
-	std::cout << "double of your number is " << getValueFromUser() * 2 << '\n';
+	std::cout << "double of your number is " << getValueFromUser() * 2 << '\n';*/
+
+	// # ==== Quiz 1,2,3 ====
+	int i = { readNumber() };
+	int y = { readNumber() };
+	writeNumber(i+y);
+
+	// Return
+	return 0;
 }
 
 

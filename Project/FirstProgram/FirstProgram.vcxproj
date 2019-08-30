@@ -153,9 +153,13 @@
   <ItemGroup>
     <ClCompile Include="Advices.cpp" />
     <ClCompile Include="FirstProgram.cpp" />
-    <ClCompile Include="getValueFromUser.cpp" />
-    <ClCompile Include="HelloWorld.cpp" />
-    <ClCompile Include="inputOutput.cpp" />
+    <ClCompile Include="basic_getValueFromUser.cpp" />
+    <ClCompile Include="basic_HelloWorld.cpp" />
+    <ClCompile Include="basic_inputOutput.cpp" />
+    <ClCompile Include="basic_io.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="basic_Functions.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
