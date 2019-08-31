@@ -1,5 +1,13 @@
+// # ==== Precursor Directives ====
 #include <iostream>
-#include "basic_Functions.h"
+//#include "basic.h"
+//#include "debugger.h"
+//#include "plog/Log.h" // Step 1: include the logger header
+
+//# define ENABLE_DEBUG // comment out to disable debugging
+//#ifdef ENABLE_DEBUG
+//std::cerr << "This section called" << whatever;
+//#endif
 
 // # ==== Forward Declarations ====
 //
@@ -10,22 +18,30 @@
 // # ==== Main ====
 int main()
 {
-	// # ==== Basic Functions Usage ====
-	//
-	/*helloWorld();
-	inputOutput();
-	std::cout << "double of your number is " << getValueFromUser() * 2 << '\n';*/
+	// Start Main
 
-	// # ==== Quiz 1,2,3 ====
-	int i = { readNumber() };
-	int y = { readNumber() };
-	writeNumber(i+y);
+
 
 	// Return
 	return 0;
 }
 
 
+	// # ==== Debugger Quiz ====
+	//int x{ readNumber() };
+	//x = x + readNumber();
+	//writeAnswer(x);
+
+	// # ==== Quiz 1,2,3 ====
+	/*int i = { readNumber() };
+	int y = { readNumber() };
+	writeNumber(i+y);*/
+
+	// # ==== Basic Functions Usage ====
+	//
+	/*helloWorld();
+	inputOutput();
+	std::cout << "double of your number is " << getValueFromUser() * 2 << '\n';*/
 
 	// # ==== Function Test ====
 	//// - Require tryout_function()
@@ -34,6 +50,5 @@ int main()
 	// # ==== Function Return Values ====
 	// - require getValueFromUser()
 	/*int num{ getValueFromUser() };
-
 	std::cout << num << " double is : " << num * 2 << '\n';
 	return 0;*/

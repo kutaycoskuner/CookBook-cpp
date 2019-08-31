@@ -33,9 +33,15 @@
     <ClCompile Include="basic_io.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="debugger_Quiz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basic_Functions.h">
+    <ClInclude Include="basic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="debugger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

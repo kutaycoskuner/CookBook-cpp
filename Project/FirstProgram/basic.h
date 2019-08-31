@@ -1,5 +1,5 @@
-#ifndef BASIC_FUNCTIONS
-#define BASIC_FUNCTIONS
+#ifndef BASIC
+#define BASIC
 //
 void helloWorld();				// helloWorld
 int inputOutput();				// inputOutput

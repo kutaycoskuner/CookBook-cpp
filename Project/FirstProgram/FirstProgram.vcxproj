@@ -91,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <DisableLanguageExtensions>true</DisableLanguageExtensions>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -152,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Advices.cpp" />
+    <ClCompile Include="debugger_Quiz.cpp" />
     <ClCompile Include="FirstProgram.cpp" />
     <ClCompile Include="basic_getValueFromUser.cpp" />
     <ClCompile Include="basic_HelloWorld.cpp" />
@@ -159,7 +161,8 @@
     <ClCompile Include="basic_io.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="basic_Functions.h" />
+    <ClInclude Include="basic.h" />
+    <ClInclude Include="debugger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
