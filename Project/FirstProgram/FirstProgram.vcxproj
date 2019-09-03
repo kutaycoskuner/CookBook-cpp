@@ -153,15 +153,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Advices.cpp" />
+    <ClCompile Include="basic_sizeOf.cpp" />
     <ClCompile Include="debugger_Quiz.cpp" />
     <ClCompile Include="FirstProgram.cpp" />
     <ClCompile Include="basic_getValueFromUser.cpp" />
     <ClCompile Include="basic_HelloWorld.cpp" />
     <ClCompile Include="basic_inputOutput.cpp" />
     <ClCompile Include="basic_io.cpp" />
+    <ClCompile Include="old_Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h" />
+    <ClInclude Include="constants.h" />
     <ClInclude Include="debugger.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

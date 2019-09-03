@@ -6,5 +6,6 @@ int inputOutput();				// inputOutput
 int getValueFromUser();			// getValueFromUser
 int readNumber();				// io
 void writeNumber(int i);		// io 
+void sizeOfData();				// sizeOf
 //
 #endif

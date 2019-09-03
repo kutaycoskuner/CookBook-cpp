@@ -36,12 +36,21 @@
     <ClCompile Include="debugger_Quiz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="basic_sizeOf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="old_Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="debugger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

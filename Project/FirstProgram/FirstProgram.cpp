@@ -1,6 +1,7 @@
 // # ==== Precursor Directives ====
 #include <iostream>
-//#include "basic.h"
+#include "basic.h"
+#include "constants.h"
 //#include "debugger.h"
 //#include "plog/Log.h" // Step 1: include the logger header
 
@@ -14,40 +15,18 @@
 //int inputOutput();
 //int getValueFromUser();
 
+// # ==== Temporary Functions ====
+//Write a program that asks the user to input an integer, and tells the user w-
+//hether the number is even or odd. Write a function called isEven() that retu-
+//rns true if an integer passed to it is even, and false otherwise. Use the mo-
+//dulus operator to test whether the integer parameter is even.
+
+
 // # ==== Main ====
 int main()
 {
 	// Start Main
 
-
-
 	// Return
 	return 0;
 }
-
-
-	// # ==== Debugger Quiz ====
-	//int x{ readNumber() };
-	//x = x + readNumber();
-	//writeAnswer(x);
-
-	// # ==== Quiz 1,2,3 ====
-	/*int i = { readNumber() };
-	int y = { readNumber() };
-	writeNumber(i+y);*/
-
-	// # ==== Basic Functions Usage ====
-	//
-	/*helloWorld();
-	inputOutput();
-	std::cout << "double of your number is " << getValueFromUser() * 2 << '\n';*/
-
-	// # ==== Function Test ====
-	//// - Require tryout_function()
-	//tryout_function();
-
-	// # ==== Function Return Values ====
-	// - require getValueFromUser()
-	/*int num{ getValueFromUser() };
-	std::cout << num << " double is : " << num * 2 << '\n';
-	return 0;*/
