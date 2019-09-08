@@ -5,6 +5,7 @@
 #include <ctime> // for std::time
 #include "basic.h"
 #include "constants.h"
+#include <utility> // for std::sort
 //#include "debugger.h"
 //#include "plog/Log.h" // Step 1: include the logger header
 
@@ -16,24 +17,10 @@
 
 // # ==== Question ====
 //
-//Implement a game of hi - lo.First, your program should pick a random integer between 1 an
-//d 100. The user is given 7 tries to guess the number.
-//
-//If the user does not guess the correct number, the program should tell them whether they 
-//guessed too high or too low.If the user guesses the right number, the program should tell
-//them they won.If they run out of guesses, the program should tell them they lost, and wha
-//t the correct number is.At the end of the game, the user should be asked if they want to 
-//play again.If the user doesn’t enter ‘y’ or ‘n’, ask them again.
-//
-//Note: You do not need to implement error handling for the user’s guess.
+// Prime Finder
 
 // # ==== Namespaces ====
 //
-namespace MyRandom
-{
-	// Initialize our mersenne twister with a random seed based on the clock (once at system startup)
-	std::mt19937 mersenne(static_cast<std::mt19937::result_type>(std::time(nullptr)));
-}
 
 // # ==== Enumerators ====
 //
@@ -43,102 +30,41 @@ namespace MyRandom
 
 // # ==== Temporary Functions ====
 //
-int getRandomNumber(int min, int max)
-{
-	std::uniform_int_distribution<> die(min, max); // we can create a distribution in any function that needs it
-	return die(MyRandom::mersenne); // and then generate a random number from our global generator
-}
-
-
-void guessGame()
-{
-	int guess{};
-	int selectedNumber = getRandomNumber(1, 100);
-	std::cout << "Welcome to high-low game. I am thinking a number you have 7 tries to guess what it is. \n";
-	for (short iii = 0; iii < 8; ++iii)
-	{
-		if (iii < 7)
-		{
-			while (1) // loop until user enters valid input
-			{
-				std::cout << "Guess #" << iii + 1 << "\n";
-				std::cin >> guess;
-
-				if (std::cin.fail()) // has a previous extraction failed?
-				{
-					// yep, so let's handle the failure
-					std::cout << "Adam gibi sayi gir yarak. \n";
-					std::cin.clear(); // put us back in 'normal' operation mode
-					std::cin.ignore(32767, '\n'); // and remove the bad input
-				}
-				else
-				{
-					std::cin.ignore(32767, '\n'); // remove any extraneous input
-					break;
-				}
-			}
-
-			if (guess > selectedNumber)
-			{
-				std::cout << "Your guess is high. \n";
-				continue;
-			}
-			else if (guess < selectedNumber)
-			{
-				std::cout << "Your guess is low. \n";
-				continue;
-			}
-			else
-			{
-				std::cout << "Congratulations! You have won. \n";
-				break;
-			}
-		}
-		else
-		{
-			std::cout << "Sorry, you lose. The correct answer was " << selectedNumber << "\n";
-		}
-
-	}
-}
-
-bool playAgain()
-{
-	while (1)
-	{
-		char answer{};
-		std::cout << "Would you like to play again? [y/n]\n";
-		std::cin >> answer;
-		if (answer == 'n')
-		{
-			std::cout << "Thank you for playing! \n";
-			return 0;
-		}
-		else if (answer == 'y')
-		{
-			return 1;
-		}
-		else
-		{
-			std::cout << "Wrong entry please try [y/n] \n";
-			continue;
-		}
-	}
-}
 
 // # ==== Main ====
 //
 int main()
 {
 	// Start Main
-	do
+	const int whichPrime = 1000; // Kacinci Prime Lazim?
+	bool primeTest{ true };
+	long primeArray[whichPrime] = {2,3,5,7};
+	long num = 10;
+
+	for (int iii = 4; iii < whichPrime; ++num)
 	{
-		guessGame();
-	} while (playAgain());
+		primeTest = true;
 
+		for (int jjj = 2; jjj < num/2; ++jjj)
+		{
+			if (num % jjj == 0)
+			{
+				primeTest = false;
+				break;
+			}
+		}
 
+		if (primeTest)
+		{
+			primeArray[iii] = num;
+			++iii;
+		}
+	}
 
-
+	for (int iii = 0; iii < whichPrime; ++iii)
+	{
+		std::cout << iii+1 << "- " << primeArray[iii] << "\n";
+	}
 	// Return
 	return 0;
 }

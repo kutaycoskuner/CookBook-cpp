@@ -1,3 +1,162 @@
+//// # ==== Orth: Prime Finder ====
+//// # ==== Question ====
+////
+//// Prime Finder
+//
+//// # ==== Namespaces ====
+////
+//
+//// # ==== Enumerators ====
+////
+//
+//// # ==== Structs ====
+////
+//
+//// # ==== Temporary Functions ====
+////
+//
+//// # ==== Main ====
+////
+//int main()
+//{
+//	// Start Main
+//	const int whichPrime = 1000; // Kacinci Prime Lazim?
+//	bool primeTest{ true };
+//	long primeArray[whichPrime] = { 2,3,5,7 };
+//	long num = 10;
+//
+//	for (int iii = 4; iii < whichPrime; ++num)
+//	{
+//		primeTest = true;
+//
+//		for (int jjj = 2; jjj < num / 2; ++jjj)
+//		{
+//			if (num % jjj == 0)
+//			{
+//				primeTest = false;
+//				break;
+//			}
+//		}
+//
+//		if (primeTest)
+//		{
+//			primeArray[iii] = num;
+//			++iii;
+//		}
+//	}
+//
+//	for (int iii = 0; iii < whichPrime; ++iii)
+//	{
+//		std::cout << iii + 1 << "- " << primeArray[iii] << "\n";
+//	}
+//	// Return
+//	return 0;
+//}
+
+//// # ==== Bubble Sort ====
+//// # ==== Question ====
+////
+////Another simple sort is called “bubble sort”.Bubble sort works by comparing adjacent pairs of elements, 
+////and swapping them if the criteria is met, so that elements “bubble” to the end of the array.Although 
+////there are quite a few ways to optimize bubble sort, in this quiz we’ll stick with the unoptimized vers
+////ion here because it’s simplest.
+////
+////Unoptimized bubble sort performs the following steps to sort an array from smallest to largest :
+////A) Compare array element 0 with array element 1. If element 0 is larger, swap it with element 1.
+////B) Now do the same for elements 1 and 2, and every subsequent pair of elements until you hit the end o
+////f the array.At this point, the last element in the array will be sorted.
+////C) Repeat the first two steps again until the array is sorted.
+//
+//// # ==== Namespaces ====
+////
+//
+//// # ==== Enumerators ====
+////
+//
+//// # ==== Structs ====
+////
+//
+//// # ==== Temporary Functions ====
+////
+//
+//// # ==== Main ====
+////
+//int main()
+//{
+//	// Start Main
+//	int array[] = { 30, 50, 20, 10, 40 };
+//
+//	for (int swapped = 1; swapped > 0;)
+//	{
+//		swapped = 0;
+//		for (int iii = 0; iii < std::size(array) - 1; ++iii)
+//		{
+//			if (array[iii] > array[iii + 1])
+//			{
+//				array[iii] = array[iii] + array[iii + 1];
+//				array[iii + 1] = array[iii] - array[iii + 1];
+//				array[iii] = array[iii] - array[iii + 1];
+//				++swapped;
+//			}
+//		}
+//	}
+//
+//	for (int iii = 0; iii < std::size(array); ++iii)
+//	{
+//		std::cout << array[iii] << " ";
+//	}
+//
+//	//std::cout << "Please enter number: " << "\n";
+//	//int x{};
+//	//while (1)
+//	//{
+//	//	std::cin >> x;
+//	//	if (std::cin.fail())
+//	//	{
+//	//		std::cout << "Invalid Entry. Please enter an integer. " << "\n";
+//	//		std::cin.clear();
+//	//		std::cin.ignore(32767, '\n');
+//	//	}
+//	//	else
+//	//	{
+//	//		break;
+//	//	}
+//	//}
+//	//int array[] = { 4, 6, 7, 3, 8, 2, 1, 9, 5 };
+//	///*std::cout << std::size(array);*/
+//
+//	//for (int iii = 0; iii < std::size(array); ++iii)
+//	//{
+//	//	std::cout << array[iii] << " ";
+//	//}
+//
+//	//int index{};
+//	//for (int iii= 0; iii < std::size(array); ++iii)
+//	//{
+//	//	if (x == array[iii])
+//	//	{
+//	//		index = iii;
+//	//		break;
+//	//	}
+//	//}
+//
+//	//std::cout << "\nIndex of your entry is: " << index << "\n";
+//
+//
+//
+//	//if (__cplusplus == 201703L) std::cout << "C++17\n";
+//	//else if (__cplusplus == 201402L) std::cout << "C++14\n";
+//	//else if (__cplusplus == 201103L) std::cout << "C++11\n";
+//	//else if (__cplusplus == 199711L) std::cout << "C++98\n";
+//	//else std::cout << "pre-standard C++\n";
+//
+//
+//
+//
+//	// Return
+//	return 0;
+//}
+
 //// # ==== 5.x ====
 //
 //// # ==== Question ====
