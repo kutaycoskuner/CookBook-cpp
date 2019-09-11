@@ -1,3 +1,136 @@
+//// ==== 6-X 2 ====
+//// # ==== Question ====
+////
+////Pretend you’re writing a game where the player can hold 3 types of items : health potions
+////, torches, and arrows.Create an enum to identify the different types of items, and a fixed
+////array to store the number of each item the player is carrying(use built - in fixed arrays,
+////	not std::array).The player should start with 2 health potions, 5 torches, and 10 arrows.
+////	Write a function called countTotalItems() that returns how many items the player has in 
+////	total.Have your main() function print the output of countTotalItems().
+//
+//// # ==== Namespaces ====
+////
+//
+//// # ==== Enumerators ====
+////
+//
+//// # ==== Structs ====
+////
+//struct Student
+//{
+//	std::string name;
+//	int grade;
+//};
+//
+//// # ==== Temporary Functions ====
+////
+//void sortStudents(Student* studentData, int howManyStudents)
+//{
+//	for (int highStep = 0; highStep < howManyStudents - 1; ++highStep)
+//	{
+//		for (int lowStep = highStep; lowStep < howManyStudents; ++lowStep)
+//		{
+//			if (studentData[highStep].grade < studentData[lowStep].grade)
+//				std::swap(studentData[highStep], studentData[lowStep]);
+//		}
+//	}
+//
+//	for (int print = 0; print < howManyStudents; ++print)
+//		std::cout << "\n" << studentData[print].name << " got a grade " << studentData[print].grade;
+//}
+//
+//// # ==== Main ====
+////
+//int main()
+//{
+//	// Start Main
+//	int howManyStudents{ 0 };
+//	do
+//	{
+//
+//		std::cout << "How many students would you like to grade: ";
+//		std::cin >> howManyStudents;
+//	} while (howManyStudents < 1);
+//
+//	Student* studentData = new Student[howManyStudents];
+//
+//	for (int iii = 0; iii < howManyStudents; ++iii)
+//	{
+//		std::cout << "Enter name of student " << iii + 1 << "# " << ": ";
+//		std::cin >> studentData[iii].name;
+//		std::cout << "Enter grade of " << studentData[iii].name << ": ";
+//		while (1)
+//		{
+//			std::cin >> studentData[iii].grade;
+//			if (studentData[iii].grade >= 0 && studentData[iii].grade <= 100)
+//				break;
+//			else
+//				std::cout << "Grade value has to be between 0-100 \n";
+//		}
+//	}
+//
+//	sortStudents(studentData, howManyStudents);
+//
+//	delete[] studentData;
+//
+//	// Return
+//	return 0;
+//}
+
+//// ==== 6-X 1 ====
+//// # ==== Question ====
+////
+////Pretend you’re writing a game where the player can hold 3 types of items : health potions
+////, torches, and arrows.Create an enum to identify the different types of items, and a fixed
+////array to store the number of each item the player is carrying(use built - in fixed arrays,
+////	not std::array).The player should start with 2 health potions, 5 torches, and 10 arrows.
+////	Write a function called countTotalItems() that returns how many items the player has in 
+////	total.Have your main() function print the output of countTotalItems().
+//
+//// # ==== Namespaces ====
+////
+//
+//// # ==== Enumerators ====
+////
+//enum Items
+//{
+//	HEALH_POTION,
+//	TORCH,
+//	ARROW,
+//	MAX_ITEMS
+//};
+//
+//// # ==== Structs ====
+////
+//
+//// # ==== Temporary Functions ====
+////
+//int countTotalItems(int* inventory)
+//{
+//	int sum = 0;
+//	for (int add = 0; add < Items::MAX_ITEMS; ++add)
+//		sum += inventory[add];
+//	return sum;
+//}
+//
+//// # ==== Main ====
+////
+//int main()
+//{
+//	// Start Main
+//	int inventory[Items::MAX_ITEMS] = { 2, 5, 10 };
+//	std::cout << countTotalItems(inventory);
+//
+//	/*if (__cplusplus == 201703L) std::cout << "C++17\n";
+//	else if (__cplusplus == 201402L) std::cout << "C++14\n";
+//	else if (__cplusplus == 201103L) std::cout << "C++11\n";
+//	else if (__cplusplus == 199711L) std::cout << "C++98\n";
+//	else std::cout << "pre-standard C++\n";*/
+//
+//	// Return
+//	return 0;
+//}
+
 //// ==== 6-9a Dynamic Memory Allocation and Sorting ====
 //// # ==== Question ====
 ////
