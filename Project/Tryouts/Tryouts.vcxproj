@@ -155,8 +155,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="c8-3-12.cpp" />
+    <ClCompile Include="constructors.cpp" />
+    <ClCompile Include="firstClassExample.cpp" />
     <ClCompile Include="Notes.cpp" />
     <ClCompile Include="recursiveFunctions7-x.cpp" />
+    <ClCompile Include="stackExample.cpp" />
     <ClCompile Include="Tryouts.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

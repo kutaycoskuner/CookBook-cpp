@@ -24,5 +24,17 @@
     <ClCompile Include="recursiveFunctions7-x.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="firstClassExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c8-3-12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stackExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="constructors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
