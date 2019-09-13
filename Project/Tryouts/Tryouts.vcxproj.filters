@@ -21,5 +21,8 @@
     <ClCompile Include="Notes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="recursiveFunctions7-x.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

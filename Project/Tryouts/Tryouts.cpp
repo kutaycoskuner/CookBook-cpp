@@ -5,6 +5,7 @@
 #include <random>				// for std::mt19937
 #include <utility>				// for std::sort
 #include <ctime>				// for std::time
+#include <cassert>				// for assert
 #include <algorithm>
 
 // ==== Question
@@ -20,7 +21,7 @@
 int main()
 {
 	// ==== Main
-    std::cout << "Hello World!\n";
+
 
 	// ==== Return
 	return 0;

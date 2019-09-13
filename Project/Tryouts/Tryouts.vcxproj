@@ -156,6 +156,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Notes.cpp" />
+    <ClCompile Include="recursiveFunctions7-x.cpp" />
     <ClCompile Include="Tryouts.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
