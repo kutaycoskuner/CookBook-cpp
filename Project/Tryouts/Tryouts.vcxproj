@@ -155,12 +155,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="c8-3-12.cpp" />
-    <ClCompile Include="constructors.cpp" />
-    <ClCompile Include="firstClassExample.cpp" />
-    <ClCompile Include="Notes.cpp" />
-    <ClCompile Include="recursiveFunctions7-x.cpp" />
-    <ClCompile Include="stackExample.cpp" />
+    <ClCompile Include="c83-12.cpp" />
+    <ClCompile Include="c85.cpp" />
+    <ClCompile Include="c8x-1.cpp" />
+    <ClCompile Include="c8x-2.cpp" />
+    <ClCompile Include="c8x-3-randomMonsterGenerator.cpp" />
+    <ClCompile Include="c85-constructors.cpp" />
+    <ClCompile Include="c82-firstClassExample.cpp" />
+    <ClCompile Include="initialNotes.cpp" />
+    <ClCompile Include="7x-recursiveFunctions.cpp" />
+    <ClCompile Include="7x-stackExample.cpp" />
     <ClCompile Include="Tryouts.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -18,22 +18,34 @@
     <ClCompile Include="Tryouts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Notes.cpp">
+    <ClCompile Include="c85.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="recursiveFunctions7-x.cpp">
+    <ClCompile Include="c8x-1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="firstClassExample.cpp">
+    <ClCompile Include="c8x-2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="c8-3-12.cpp">
+    <ClCompile Include="c83-12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="stackExample.cpp">
+    <ClCompile Include="c85-constructors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="constructors.cpp">
+    <ClCompile Include="c82-firstClassExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="c8x-3-randomMonsterGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7x-recursiveFunctions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="7x-stackExample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="initialNotes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
